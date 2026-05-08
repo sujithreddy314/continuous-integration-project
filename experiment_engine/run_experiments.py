@@ -44,17 +44,6 @@ Duration: {duration}s
 
 
 if __name__ == "__main__":
-
     for i in range(10):
-
-        run_test(
-            "tests/reliable",
-            "simple",
-            "reliable"
-        )
-
-        run_test(
-            "tests/unreliable",
-            "complex",
-            "flaky"
-        )
+        run_test("tests/reliable", "simple", "reliable")
+        run_test("tests/unreliable", "complex", "flaky")

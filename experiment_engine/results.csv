@@ -19,3 +19,6 @@ c7e6a373,simple,reliable,PASSED,0.37
 72a5e979,complex,flaky,PASSED,1.96
 6408d2bb,simple,reliable,PASSED,0.47
 7b62fc0e,complex,flaky,PASSED,2.47
+2dbf8cbe,simple,reliable,PASSED,0.39
+c49ebcb4,complex,flaky,PASSED,3.54
+5ab6df13,simple,reliable,PASSED,0.38
