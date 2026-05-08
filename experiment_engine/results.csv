@@ -1,4 +1,4 @@
-run_id,pipeline_type,test_type,status,duration_seconds
+run_id,timestamp,pipeline_type,test_type,status,duration_seconds
 687749c0,simple,reliable,PASSED,0.5
 ad35471d,complex,flaky,PASSED,2.1
 d8b6db01,simple,reliable,PASSED,0.37
@@ -22,3 +22,15 @@ c7e6a373,simple,reliable,PASSED,0.37
 2dbf8cbe,simple,reliable,PASSED,0.39
 c49ebcb4,complex,flaky,PASSED,3.54
 5ab6df13,simple,reliable,PASSED,0.38
+7a1282d0,simple,reliable,PASSED,0.51
+44701d92,complex,flaky,PASSED,2.59
+57eed48c,simple,reliable,PASSED,0.38
+7e7ed9f9,complex,flaky,FAILED,2.58
+1dd58fad,simple,reliable,PASSED,0.38
+11d4682d,complex,flaky,PASSED,3.91
+ed01adb2,simple,reliable,PASSED,0.37
+726db17e,complex,flaky,PASSED,3.15
+80098d68,simple,reliable,PASSED,0.38
+c4c88e9c,complex,flaky,FAILED,1.05
+2dd61d51,simple,reliable,PASSED,0.37
+e1fa513a,complex,flaky,PASSED,3.79

@@ -2,11 +2,15 @@ import csv
 import subprocess
 import time
 import uuid
+from datetime import datetime
+
+
+CSV_FILE = "experiment_engine/results.csv"
 
 
 def run_test(test_path, pipeline_type, test_type):
-
     run_id = str(uuid.uuid4())[:8]
+    timestamp = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
 
     start_time = time.time()
 
@@ -19,31 +23,30 @@ def run_test(test_path, pipeline_type, test_type):
     end_time = time.time()
 
     duration = round(end_time - start_time, 2)
-
     status = "PASSED" if result.returncode == 0 else "FAILED"
 
-    with open("experiment_engine/results.csv", "a") as file:
-
+    with open(CSV_FILE, "a", newline="") as file:
         writer = csv.writer(file)
 
         writer.writerow([
             run_id,
+            timestamp,
             pipeline_type,
             test_type,
             status,
             duration
         ])
 
-    print(f"""
-Run ID: {run_id}
-Pipeline: {pipeline_type}
-Test Type: {test_type}
-Status: {status}
-Duration: {duration}s
-""")
+    print(
+        f"Run ID: {run_id} | "
+        f"Pipeline: {pipeline_type} | "
+        f"Test: {test_type} | "
+        f"Status: {status} | "
+        f"Duration: {duration}s"
+    )
 
 
 if __name__ == "__main__":
-    for i in range(10):
+    for i in range(50):
         run_test("tests/reliable", "simple", "reliable")
         run_test("tests/unreliable", "complex", "flaky")
