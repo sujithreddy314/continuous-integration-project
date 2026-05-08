@@ -1,0 +1,38 @@
+name: Complex CI
+
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+
+jobs:
+  complex-pipeline:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Run reliable tests with coverage
+        run: pytest tests/reliable --cov=services
+
+      - name: Run unreliable tests
+        run: pytest tests/unreliable
+
+      - name: Build Docker image
+        run: docker build -t user-service .
+
+      - name: Run Docker container health check
+        run: |
+          docker run -d -p 8001:8001 --name user-service-container user-service
+          sleep 5
+          curl http://localhost:8001/health
+          docker stop user-service-container
