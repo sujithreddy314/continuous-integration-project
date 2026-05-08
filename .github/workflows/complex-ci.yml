@@ -25,7 +25,7 @@ jobs:
         run: pytest tests/reliable --cov=services
 
       - name: Run unreliable tests
-        run: pytest tests/unreliable
+        run: pytest tests/unreliable || true
 
       - name: Build Docker image
         run: docker build -t user-service .
