@@ -19,4 +19,4 @@ def test_random_delay():
     time.sleep(delay)
 
     response = client.get("/health")
-    assert response.status_code == 200 what do i need to remove
+    assert response.status_code == 200
