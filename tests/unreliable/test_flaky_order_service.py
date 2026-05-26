@@ -8,7 +8,6 @@ from services.order_service.main import app
 
 client = TestClient(app)
 
-
 @pytest.mark.flaky(reruns=2)
 def test_flaky_order_creation():
     should_fail = random.choice([True, False])

@@ -1,43 +1,20 @@
-run_id,timestamp,pipeline_type,test_type,status,duration_seconds
-687749c0,simple,reliable,PASSED,0.5
-ad35471d,complex,flaky,PASSED,2.1
-d8b6db01,simple,reliable,PASSED,0.37
-f804cf7a,complex,flaky,PASSED,2.73
-9fc26f95,simple,reliable,PASSED,0.37
-6e319e0a,complex,flaky,FAILED,0.94
-00b17c31,simple,reliable,PASSED,0.36
-2ca5eccb,complex,flaky,PASSED,2.78
-3f42b3b2,simple,reliable,PASSED,0.37
-2c77a96d,complex,flaky,PASSED,2.0
-d6304fc5,simple,reliable,PASSED,0.38
-e661ed28,complex,flaky,PASSED,1.97
-a6b81061,simple,reliable,PASSED,0.39
-95904bc9,complex,flaky,PASSED,2.55
-c0a0a9b7,simple,reliable,PASSED,0.37
-063315ad,complex,flaky,FAILED,1.78
-c7e6a373,simple,reliable,PASSED,0.37
-72a5e979,complex,flaky,PASSED,1.96
-6408d2bb,simple,reliable,PASSED,0.47
-7b62fc0e,complex,flaky,PASSED,2.47
-2dbf8cbe,simple,reliable,PASSED,0.39
-c49ebcb4,complex,flaky,PASSED,3.54
-5ab6df13,simple,reliable,PASSED,0.38
-7a1282d0,simple,reliable,PASSED,0.51
-44701d92,complex,flaky,PASSED,2.59
-57eed48c,simple,reliable,PASSED,0.38
-7e7ed9f9,complex,flaky,FAILED,2.58
-1dd58fad,simple,reliable,PASSED,0.38
-11d4682d,complex,flaky,PASSED,3.91
-ed01adb2,simple,reliable,PASSED,0.37
-726db17e,complex,flaky,PASSED,3.15
-80098d68,simple,reliable,PASSED,0.38
-c4c88e9c,complex,flaky,FAILED,1.05
-2dd61d51,simple,reliable,PASSED,0.37
-e1fa513a,complex,flaky,PASSED,3.79
-0e61e2f1,2026-05-08 21:09:18,simple,reliable,PASSED,0.39
-a5b8264c,2026-05-08 21:09:19,complex,flaky,PASSED,3.86
-12117d6a,2026-05-08 21:09:22,simple,reliable,PASSED,0.38
-7b28a1b6,2026-05-08 21:09:23,complex,flaky,PASSED,1.49
-18904300,2026-05-08 21:09:24,simple,reliable,PASSED,0.37
-0a518c19,2026-05-08 21:09:25,complex,flaky,FAILED,3.84
-5960994d,2026-05-08 21:09:29,simple,reliable,PASSED,0.38
+run_id,timestamp,pipeline_type,test_type,status,duration_seconds9f51ea68,2026-05-26 15:02:25,simple,reliable,PASSED,0.53
+9ccdd2e1,2026-05-26 15:02:26,complex,flaky,FAILED,0.49
+d68827f7,2026-05-26 15:02:26,simple,reliable,PASSED,0.41
+1269a7f3,2026-05-26 15:02:27,complex,flaky,FAILED,0.48
+6717ed64,2026-05-26 15:02:27,simple,reliable,PASSED,0.41
+343e872d,2026-05-26 15:02:28,complex,flaky,FAILED,0.48
+040b0222,2026-05-26 15:02:28,simple,reliable,PASSED,0.41
+0b20f922,2026-05-26 15:02:29,complex,flaky,FAILED,0.48
+a8936fdc,2026-05-26 15:02:29,simple,reliable,PASSED,0.42
+4a798ad5,2026-05-26 15:02:29,complex,flaky,FAILED,0.48
+8bf5964a,2026-05-26 15:02:30,simple,reliable,PASSED,0.47
+59470f23,2026-05-26 15:02:30,complex,flaky,FAILED,0.49
+8569498c,2026-05-26 15:02:31,simple,reliable,PASSED,0.41
+f4957d7e,2026-05-26 15:02:31,complex,flaky,FAILED,0.5
+33d52919,2026-05-26 15:02:32,simple,reliable,PASSED,0.42
+ba63e2e7,2026-05-26 15:02:32,complex,flaky,FAILED,0.48
+c601e46b,2026-05-26 15:02:33,simple,reliable,PASSED,0.42
+11becbf4,2026-05-26 15:02:33,complex,flaky,FAILED,0.48
+7cc92312,2026-05-26 15:02:34,simple,reliable,PASSED,0.42
+396e7cac,2026-05-26 15:02:34,complex,flaky,FAILED,0.48

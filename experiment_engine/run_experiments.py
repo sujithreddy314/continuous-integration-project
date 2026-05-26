@@ -15,7 +15,7 @@ def run_test(test_path, pipeline_type, test_type):
     start_time = time.time()
 
     result = subprocess.run(
-        ["pytest", test_path],
+        ["python3", "-m", "pytest", test_path],
         capture_output=True,
         text=True
     )
@@ -47,6 +47,6 @@ def run_test(test_path, pipeline_type, test_type):
 
 
 if __name__ == "__main__":
-    for i in range(50):
+    for i in range(10):
         run_test("tests/reliable", "simple", "reliable")
         run_test("tests/unreliable", "complex", "flaky")

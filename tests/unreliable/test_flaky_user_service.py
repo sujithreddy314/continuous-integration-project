@@ -8,7 +8,6 @@ from services.user_service.main import app
 
 client = TestClient(app)
 
-
 @pytest.mark.flaky(reruns=2)
 def test_random_flaky_failure():
     result = random.choice([True, False])
@@ -20,4 +19,4 @@ def test_random_delay():
     time.sleep(delay)
 
     response = client.get("/health")
-    assert response.status_code == 200
+    assert response.status_code == 200 what do i need to remove
